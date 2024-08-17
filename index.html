@@ -468,7 +468,8 @@
             </div>
             <div class="footerLine"></div>
             <div class="row py-3 justify-content-between">
-                <div class="col-12 col-lg-6 fw-semibold text-center text-lg-start  ">Designed and built by <span class="headerText_gradient">Tanveer,Ahmad</span>
+                <div class="col-12 col-lg-6 fw-semibold text-center text-lg-start  ">Designed and built by <span
+                        class="headerText_gradient">Tanveer,Ahmad </span>
                     with love & cofee <img src="./src/images/coffee-cup.png" style="height: 16px;" alt=""> </div>
                 <div class="col-12 col-lg-6 fw-semibold text-center text-lg-end">© 2024, RoboNest <i
                         class="bi bi-robot fw-semibold"></i></div>
@@ -476,11 +477,36 @@
         </div>
     </section>
 
-
+    <button onclick="topFunction()" id="backToTopBtn" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+    <a href="https://wa.me/923000695646" class="whatsapp-button" target="_blank">
+        <img src="./src/images/icons8-whatsapp.svg" alt="WhatsApp" />
+    </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        // Get the button
+        let backToTopBtn = document.getElementById("backToTopBtn");
+
+        // Show the button when scrolling down 100px from the top of the page
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopBtn.classList.add("show");
+            } else {
+                backToTopBtn.classList.remove("show");
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+
+    </script>
 </body>
 
 </html>
