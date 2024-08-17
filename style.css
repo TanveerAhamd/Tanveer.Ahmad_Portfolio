@@ -127,8 +127,8 @@ ul {
 /* Style for Back to Top Button */
 .back-to-top {
     position: fixed;
-    bottom: 130px;
-    right: 28px;
+    bottom: 42px;
+    right: 30px;
     z-index: 99;
     border: none;
     outline: none;
@@ -155,8 +155,8 @@ ul {
   /* whatsapp button  */
   .whatsapp-button {
     position: fixed;
-    bottom: 30px;
-    right: 27px;
+    bottom: 120px;
+    right: 28px;
     z-index: 100;
     height: 40px;
     width: 40px;
